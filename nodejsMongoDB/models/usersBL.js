@@ -96,65 +96,6 @@ exports.updateUser = function(id,userData)
     
 }
 
-// exports.addUserTask = function(id,userData)
-// {
-//     return new Promise((resolve,reject) =>
-//     {
-//         User.findByIdAndUpdate(id,
-//             {
-//                 name : userData.name,
-//                 email : userData.email,
-//                 street : userData.street,
-//                 city : userData.city,
-//                 zipcode :userData.zipcode,
-//                 $push: { tasks: userData.tasks  },
-
-//             }, function(err)
-//             {
-//                 if(err)
-//                 {
-//                     reject(err)
-//                 }
-//                 else
-//                 {
-//                     resolve('Add !')
-//                 }
-//             })
-           
-//     })
-    
-// }
-
-// exports.addUserPost = function(id,userData)
-// {
-//     return new Promise((resolve,reject) =>
-//     {
-//         User.findByIdAndUpdate(id,
-//             {
-//                 name : userData.name,
-//                 email : userData.email,
-//                 street : userData.street,
-//                 city : userData.city,
-//                 zipcode :userData.zipcode,
-//                 $push: { posts: userData.posts },
-
-//             }, function(err)
-//             {
-//                 if(err)
-//                 {
-//                     reject(err)
-//                 }
-//                 else
-//                 {
-//                     resolve('Add !')
-//                 }
-//             })
-           
-//     })
-    
-// }
-
-
 exports.deleteUser = function(id)
 {
     return new Promise((resolve,reject) =>
